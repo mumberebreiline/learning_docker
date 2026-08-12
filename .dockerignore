@@ -1,0 +1,20 @@
+ # 1. Heavy & Machine-Specific Folders
+node_modules/
+npm-debug.log*
+
+# 2. Local Environment Secrets & Configuration
+.env
+*.env
+.env.*
+
+# 3. Version Control & IDE Files
+.git/
+.gitignore
+.vscode/
+.idea/
+.DS_Store
+
+# 4. Docker Build Definition Files
+Dockerfile*
+docker-compose*.yml
+.dockerignore

@@ -1,10 +1,12 @@
 FROM node
 
-ENV MONGO_INITDB_ROOT_USERNAME=breiline \
-    MONGO_INITDB_ROOT_PASSWORD="1234"
+WORKDIR /home/app
 
-RUN mkdir -p home/app
+COPY . .
 
-COPY . /home/app
+WORKDIR /home/app/app
+
+RUN npm install 
+
 
 CMD ["node","server.js"]
