@@ -1,4 +1,4 @@
-FROM node
+FROM node:18-alpine
 
 WORKDIR /home/app
 
@@ -9,4 +9,4 @@ WORKDIR /home/app/app
 RUN npm install 
 
 
-CMD ["node","start"]
+CMD ["node","server.js"]
